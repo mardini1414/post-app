@@ -6,7 +6,7 @@ const PostList = ({ data }) => {
   return (
     <>
       {!!data && data.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4 pb-4">
           {data.map((post) => {
             return (
               <PostCard
