@@ -5,7 +5,7 @@ import { Inbox } from 'lucide-react';
 const PostList = ({ data }) => {
   return (
     <>
-      {data.length > 0 ? (
+      {!!data && data.length > 0 ? (
         <div className="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
           {data.map((post) => {
             return (
